@@ -10777,8 +10777,8 @@ function () {
       var camera = this.camera = new THREE.PerspectiveCamera(45, container.offsetWidth / container.offsetHeight, 0.1, 1000);
       camera.position.set(-1.8, 0.6, 2.7);
       camera.target = new THREE.Vector3();
-      var light1 = new THREE.PointLight(0xffffff, 3, 100);
-      var light2 = new THREE.PointLight(0xffffff, 3, 100); // Specify the light's position
+      var light1 = new THREE.PointLight(0xffffff, 2, 50);
+      var light2 = new THREE.PointLight(0xffffff, 2, 50); // Specify the light's position
 
       light1.position.set(-10, 10, 10);
       light2.position.set(1, 1, 10); // Add the light to the scene

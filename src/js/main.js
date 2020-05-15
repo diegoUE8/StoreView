@@ -35,8 +35,8 @@ class webvr {
 		camera.position.set(-1.8, 0.6, 2.7);
 		camera.target = new THREE.Vector3();
 
-		const light1 = new THREE.PointLight(0xffffff, 3, 100);
-		const light2 = new THREE.PointLight(0xffffff, 3, 100);
+		const light1 = new THREE.PointLight(0xffffff, 2, 50);
+		const light2 = new THREE.PointLight(0xffffff, 2, 50);
 		// Specify the light's position
 		light1.position.set(-10 , 10, 10);
 		light2.position.set(1, 1, 10);
