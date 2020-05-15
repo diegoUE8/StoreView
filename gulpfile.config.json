@@ -1,0 +1,37 @@
+﻿{
+	"targets": {
+		"browser": {
+			"compile": [{
+				"input": "src/css/main.scss",
+				"output": "docs/css/main.css",
+				"minify": false
+			}, {
+				"input": "src/js/main.js",
+				"output": "docs/js/main.js",
+				"minify": false
+			}],
+			"bundle": [{
+				"input": [
+					"node_modules/gsap/src/uncompressed/easing/EasePack.js",
+					"node_modules/gsap/src/uncompressed/TweenMax.js",
+					"node_modules/three/build/three.js",
+					"node_modules/three/examples/js/vr/WebVR.js",
+					"node_modules/three/examples/js/modifiers/SubdivisionModifier.js",
+					"node_modules/three/examples/js/loaders/MTLLoader.js",
+					"node_modules/three/examples/js/loaders/OBJLoader.js"
+				],
+				"output": "docs/js/vendors.js",
+				"minify": true
+			}]
+		}
+	},
+	"options": {
+		"tfs": false,
+		"server": {
+			"host": "0.0.0.0",
+			"src": "./docs",
+			"path": "/StoreView/",
+			"port": 45000
+		}
+	}
+}
